@@ -49,23 +49,20 @@ The suite covers a comprehensive set of scenarios focusing on the **Checkout Flo
    git clone https://github.com/[USERNAME]/[REPO-NAME].git
    cd [REPO-NAME]
 
-    Install dependencies:
-    code Bash
-
+2. **Install dependencies:**
+   ```bash
     npm install
 
-    Setup Environment:
-    Create a .env file in the root directory:
-    code Env
-
+3. **Setup Environment:**
+   Create a .env file in the root directory:
+   ```bash
     BASE_URL=http://localhost:3000
 
-    Run the tests:
-    code Bash
-
+4. **Run the tests:**
+   ```bash
     npx playwright test
 
-📈 Impact & Results
+### Impact & Results
 
     Coverage: Achieved 100% coverage of critical checkout business paths.
 
