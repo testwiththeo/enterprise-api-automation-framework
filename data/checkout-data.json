@@ -1,0 +1,23 @@
+[
+  {
+    "scenario": "Happy Path - Valid Product & Balance",
+    "product_id": "PROD-001",
+    "amount": 1000000,
+    "expectedStatus": 200,
+    "expectedMessage": "PAID"
+  },
+  {
+    "scenario": "Negative - Out of Stock",
+    "product_id": "PROD-002",
+    "amount": 1000000,
+    "expectedStatus": 409,
+    "expectedMessage": "out of stock"
+  },
+  {
+    "scenario": "Negative - Insufficient Balance",
+    "product_id": "PROD-001",
+    "amount": 5000000,
+    "expectedStatus": 402,
+    "expectedMessage": "insufficient balance"
+  }
+]
